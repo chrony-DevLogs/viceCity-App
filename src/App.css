@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: 'Aldrich', sans-serif;
+    padding: 2px 20px;
+    transition: .2s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link:hover{
+    color: rgba(176, 26, 221, 0.795);
+    background-color: snow;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html,body{
+    background: url("./imgs/background.jpg") center fixed;
+    background-size: cover;
+    height: 100vh;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navP{
+    display: flex;
+    background: linear-gradient(90deg,rgba(176, 26, 221, 0.795),rgba(133, 36, 163, 0.596),rgba(71, 19, 92, 0.76));
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 30px rgb(255, 0, 242);
+    margin: 0 0 50px 0;
+}
+.navC{
+    font-size: 25px;
+    list-style: none;
+}
+.navC1{
+    margin: 0 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.navC2{
+    margin: 0 0 0 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navC3{
+    margin: 0 100px 0 0;
+}
+
+
+.logo{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro > h2 {
+    color: rgb(216, 36, 216);
+    font-size: 50px;
+}
+.intro > h1 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+.intro > h1,h2{
+    font-family: 'Dancing Script', cursive;
+}
+.introText{
+    margin: 50px 0;
+    width: 700px;
+}
+.intro > div > p {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: snow;
+}
+
+.gameCard{
+    height: 200px;
+    width: 200px;
+    margin: 50px 20px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 20px rgba(255, 0, 234, 0.658),-2px -2px 20px rgba(255, 0, 234, 0.658) ;
+    background-size: cover;
+    display: inline-block;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+
+.addeasterContainer{
+    margin: 100px 0 0 100px;
+}
+
+.addEaser{
+    height: 50px;
+    width: 50px;
+    background: url("./imgs/frame.png") center;
+    background-size: cover;
+
+    border-radius: 100%;
+    transition: .3s;
+}
+
+
+.addEasterComponents{
+    padding: 10px;
+    transition: .3s;
+    opacity: 0%;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.addeasterContainer{
+    position: fixed;
+    left: 0;
+}
+
+.addEasterComponents input {
+    text-align: center;
+    width: 100%;
+    border: 1px solid;
+    background: none;
+}
+.addEasterComponents textarea {
+    width: 100%;
+    background: none;
+    border: 1px solid;
+    padding: 10px;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    background: url("./imgs/close.png") center;
+    background-size: cover;
+    filter: saturate(500%);
+    border: none;
+}
+
+
+.EeasterElements{
+    color: snow;
+    width: 500px;
+    text-align: center;
+    padding: 30px;
+}
+.EeasterElements > h1{
+    font-family: 'Aldrich', sans-serif;
+
+}
+
+.component{
+    display: flex;
+    justify-content: space-around;
 }
