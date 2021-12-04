@@ -1,0 +1,10 @@
+Fitchers 
+
+1-navBarWithSoundEffect
+2-RoutingWithReactRouter
+4-stateManagementWithReactRedux
+5-threeSections
+6-HomeSection
+7-EASTEREggsSection ====> AddEasterEggs / ReadEasterEggs
+8-Cheats! ====> ReadCheats
+9-Done baby Done ;)
